@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Development</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Personal Form</h1>
+    <p id="description">Thank you for filling out this form, and helping me grow</P>
+    <form class="form_name" id="survey-form">
+      <fieldset class="fieldset_1">
+        <label id="name-label" for="name">Name: <input class="input_1" type="text" id="name" placeholder="Please enter your name" required /></label>
+        <label id="email-label" for="email">Email: <input class="input_1" type="email" id="email" placeholder="Please enter your email" required /></label>
+        <label id="number-label" for="number">Age: (optional) <input class="input_1" type="number" id="number" min="18" max="130" placeholder="Please enter your age" /></label>
+      </fieldset>
+      <fieldset class="fieldset_2">
+        <label>How did we meet?:
+          <select id="dropdown">
+            <option>select one</option>
+            <option>School</option>
+            <option>Work</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>What is our relation?: </label>
+        <label for="friends" ><input id="friends" value="Friends" type="radio" name="relation" /> Friends</label>
+        <label for="family" ><input id="family" value="Family" type="radio" name="relation" /> Family</label>
+        <label for="co-workers" ><input id="co-workers" value="Co-Workers" type="radio" name="relation" /> Co-Workers</label>
+        <label for="other" ><input id="other" value="Other" type="radio" name="relation" /> Other</label>
+      </fieldset>
+      <fieldset class="fieldset_3">
+        <label>What do you think about my personality?: 
+          <label><input id="checkbox" value="Good" type="checkbox" /> Good</label>
+          <label><input id="checkbox" value="Ok" type="checkbox" /> Ok</label>
+          <label><input id="checkbox" value="Bad" type="checkbox" /> Bad</label>
+        </label>
+        <label>Can you explain your choice?: 
+          <textarea id="textarea"></textarea>
+        </label>
+        <button id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
